@@ -1,26 +1,24 @@
-/* Reset y flex layout */
+/* Reseteo de márgenes y alturas */
 html, body {
-  height: 100%;
   margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
 }
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Cabecera (si la activas) */
+/* Cabecera fija de 100px */
 #header {
+  height: 100px;
   text-align: center;
-  padding: 10px;
   background: #fff;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 #header img {
-  max-height: 100px;
+  max-height: 100%;
   width: auto;
 }
 
-/* Mapa ocupa el resto */
+/* Mapa ocupa lo restante */
 #map {
-  flex: 1;
+  height: calc(100vh - 100px);
+  width: 100%;
 }

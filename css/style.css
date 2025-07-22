@@ -1,0 +1,28 @@
+/* Ocupa toda la pantalla y elimina márgenes */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+/* Flex para header + mapa */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabecera */
+#header {
+  text-align: center;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+#header img {
+  /* Mantiene la proporción, no se deforma */
+  max-height: 100px;
+  width: auto;
+}
+
+/* Mapa llena el espacio restante */
+#map {
+  flex: 1;
+}

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }).addTo(map);
 
   // 2. Cargar el GeoJSON
-  fetch('data/Mexico1_.json.geojson')
+  fetch('data/Estados_1.geojson')
     .then(res => res.json())
     .then(data => {
       // 3. Añadirlo al mapa con popups automáticos

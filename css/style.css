@@ -1,15 +1,14 @@
-/* Ocupa toda la pantalla y elimina márgenes */
+/* Reset y flex layout */
 html, body {
   height: 100%;
   margin: 0;
 }
-/* Flex para header + mapa */
 body {
   display: flex;
   flex-direction: column;
 }
 
-/* Cabecera */
+/* Cabecera (si la activas) */
 #header {
   text-align: center;
   padding: 10px;
@@ -17,12 +16,11 @@ body {
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 #header img {
-  /* Mantiene la proporción, no se deforma */
   max-height: 100px;
   width: auto;
 }
 
-/* Mapa llena el espacio restante */
+/* Mapa ocupa el resto */
 #map {
   flex: 1;
 }

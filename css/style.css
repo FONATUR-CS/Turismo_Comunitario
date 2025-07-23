@@ -13,18 +13,18 @@ body {
 
 /* Cabecera */
 #header {
-  text-align: center;
+  /* Quitamos padding para que la imagen tome todo el ancho */
+  padding: 0;
   background: #fff;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-  /* La altura se adapta a la de la imagen */
-  padding: 10px 0;
 }
+
+/* Imagen responsiva ocupando todo el ancho */
 #header img {
-  /* Quitamos max-height y width forzada */
-  width: auto;
-  height: auto;
-  /* Centramos la imagen */
-  display: inline-block;
+  display: block;      /* Para que margin auto funcione */
+  width: 100%;         /* Ocupa todo el ancho del contenedor */
+  height: auto;        /* Mantiene la proporción */
+  margin: 0 auto;      /* Centrado horizontal (por si el contenedor es más ancho) */
 }
 
 /* Mapa ocupa todo el espacio restante */

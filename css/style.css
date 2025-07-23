@@ -1,24 +1,33 @@
-/* Reseteo de márgenes y alturas */
+/* Reset de márgenes y alturas */
 html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
 }
-/* Cabecera fija de 100px */
+
+/* Layout flex para cabecera + mapa */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabecera */
 #header {
-  height: 100px;
   text-align: center;
   background: #fff;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  /* La altura se adapta a la de la imagen */
+  padding: 10px 0;
 }
 #header img {
-  max-height: 100%;
+  /* Quitamos max-height y width forzada */
   width: auto;
+  height: auto;
+  /* Centramos la imagen */
+  display: inline-block;
 }
 
-/* Mapa ocupa lo restante */
+/* Mapa ocupa todo el espacio restante */
 #map {
-  height: calc(100vh - 100px);
-  width: 100%;
+  flex: 1;
 }
